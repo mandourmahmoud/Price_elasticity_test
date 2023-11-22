@@ -28,4 +28,6 @@ min_diff_indices = merged_data.groupby('product_sku')['orders_diff'].idxmin()
 # Filtering the original dataframe to include only these rows
 unique_min_diff_data = merged_data.loc[min_diff_indices]
 
+print(unique_min_diff_data)
+
 #unique_min_diff_data.to_csv("unique_min_diff_data.csv")
